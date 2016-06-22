@@ -1,0 +1,25 @@
+{
+  "name": "flex-hapi-authorization",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlexAppeal/hapi-authorization.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlexAppeal/hapi-authorization/issues"
+  },
+  "homepage": "https://github.com/FlexAppeal/hapi-authorization#readme",
+  "dependencies": {
+    "faucet": "0.0.1",
+    "sinon": "1.17.4",
+    "tape": "4.6.0"
+  }
+}
