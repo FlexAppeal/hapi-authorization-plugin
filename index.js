@@ -1,4 +1,4 @@
-const { setConfig, can, check } = require('flex-authorization');
+const { setConfig, can, check } = require('flexappeal-acl');
 
 const authorizationPlugin = {
   register: (server, options, next) => {
@@ -19,7 +19,7 @@ const authorizationPlugin = {
 };
 
 authorizationPlugin.register.attributes = {
-  name: 'flex-hapi-authorization',
+  name: 'hapi-acl-plugin',
   version: '0.0.1',
 };
 

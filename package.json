@@ -1,7 +1,7 @@
 {
   "name": "hapi-acl-plugin",
   "version": "0.0.1",
-  "description": "",
+  "description": "A Hapi plugin to handle ACL in your application",
   "main": "index.js",
   "scripts": {
     "test": "tape test.js | faucet"
@@ -10,9 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/FlexAppeal/hapi-authorization-plugin.git"
   },
-  "keywords": [],
+  "keywords": ["hapi", "acl", "plugin", "permissions", "authorization"],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/FlexAppeal/hapi-authorization-plugin/issues"
   },
@@ -21,5 +21,8 @@
     "faucet": "0.0.1",
     "sinon": "1.17.4",
     "tape": "4.6.0"
+  },
+  "dependencies": {
+    "flexappeal-acl": "0.0.1"
   }
 }
