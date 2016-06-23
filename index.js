@@ -7,7 +7,7 @@ const authorizationPlugin = {
 
     server.ext('onPostAuth', (req, reply) => {
       const user = req.auth.credentials;
-      user.set(roleKey, options.role(user, req.params));
+      user[roleKey] = options.role(user, req.params);
 
       reply.continue({
         credentials: user,
