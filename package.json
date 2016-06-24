@@ -1,6 +1,6 @@
 {
   "name": "hapi-acl-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Hapi plugin to handle ACL in your application",
   "main": "dist/index.js",
   "scripts": {
