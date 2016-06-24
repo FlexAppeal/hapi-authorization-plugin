@@ -32,7 +32,7 @@
     "babel-plugin-transform-object-rest-spread": "6.8.0",
     "babel-preset-es2015": "6.9.0",
     "faucet": "0.0.1",
-    "flexappeal-acl": "0.0.2",
+    "flexappeal-acl": "0.0.3",
     "sinon": "1.17.4",
     "tape": "4.6.0"
   },
