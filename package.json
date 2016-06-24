@@ -5,7 +5,8 @@
   "main": "dist.js",
   "scripts": {
     "test": "tape test.js | faucet",
-    "compile": "babel index.js -o dist.js"
+    "compile": "babel index.js -o dist.js",
+    "prepublish": "npm run test && npm run compile"
   },
   "repository": {
     "type": "git",
