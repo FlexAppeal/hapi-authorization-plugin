@@ -1,15 +1,22 @@
 {
   "name": "hapi-acl-plugin",
-  "version": "0.0.5",
+  "version": "0.0.23",
   "description": "A Hapi plugin to handle ACL in your application",
+  "author": "Flex-Appeal Developers <dev@flex-appeal.nl> (https://github.com/FlexAppeal)",
+  "contributors": [{
+    "name": "Guido Schmitz",
+    "email": "guido@flex-appeal.nl"
+  }, {
+    "name": "Liam Hubers",
+    "email": "liam@flex-appeal.nl"
+  }],
   "main": "dist/index.js",
   "scripts": {
     "test": "tape src/test.js | faucet",
     "clean": "rm -rf dist/ && mkdir dist/",
-    "compile": "npm run clean && babel src/index.js -o dist/index.js",
-    "prepublish": "npm run test && npm run compile"
+    "compile": "babel src/index.js -o dist/index.js",
+    "prepublish": "npm run test && npm run clean && npm run compile"
   },
-  "files": ["src/", "dist/"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FlexAppeal/hapi-authorization-plugin.git"
@@ -27,13 +34,15 @@
     "url": "https://github.com/FlexAppeal/hapi-authorization-plugin/issues"
   },
   "homepage": "https://github.com/FlexAppeal/hapi-authorization-plugin#readme",
+  "dependencies": {
+    "flexappeal-acl": "0.0.3"
+  },
   "devDependencies": {
     "babel-cli": "6.10.1",
     "babel-plugin-transform-async-to-generator": "6.8.0",
     "babel-plugin-transform-object-rest-spread": "6.8.0",
     "babel-preset-es2015": "6.9.0",
     "faucet": "0.0.1",
-    "flexappeal-acl": "0.0.3",
     "sinon": "1.17.4",
     "tape": "4.6.0"
   }
