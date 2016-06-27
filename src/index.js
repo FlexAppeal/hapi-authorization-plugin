@@ -41,7 +41,7 @@ authorizationPlugin.register.attributes = {
 module.exports = authorizationPlugin;
 module.exports.can = can;
 module.exports.check = (user, action, itemToValidate, errMessage) => {
-  if (itemToValidate.isBoom) throw itemToValidate;
+  if (itemToValidate && itemToValidate.isBoom) throw itemToValidate;
 
   try {
     check(user, action, itemToValidate, errMessage);
